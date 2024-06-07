@@ -3,19 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Single Page Website</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <style>
-            .color-teal{
-                color: teal;
-            }
             .icon-lg{
                 font-size: 50px;
+                color: white;
             }
             .icon-sm{
                 font-size: 25px;
+                color: white;
             }
             .remove-text-decoration{
                 text-decoration: none;
@@ -26,32 +25,170 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('assets/background_image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg mt-3 ms-3 me-3">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">
-                        <img src="assets/logo.png" height="100" alt="Brand Logo">
+                        <img src="assets/logo.png" height="100" alt="Brand Logo" style="border-radius: 10px;">
+                        <span class="text-white display-5 fw-normal ms-3">Atishay Soni</span>
                     </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <button type="button" class="navbar-toggler text-white" data-bs-toggle="collapse" data-bs-target="#navbar1">
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar1">
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link active">Home</a>
+                            <a href="#" class="nav-item nav-link active text-white">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
-                                <div class="dropdown-menu">
-                                    <a href="#about-us" class="dropdown-item">Company</a>
-                                    <a href="#team" class="dropdown-item">Team</a>
+                                <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Works</a>
+                                <div class="dropdown-menu bg-dark">
+                                    <a href="#projects" class="dropdown-item text-white">Projects</a>
+                                    <a href="#certificates" class="dropdown-item text-white">Certificates</a>
                                 </div>
                             </div>
-                            <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Background</a>
+                                <div class="dropdown-menu bg-dark">
+                                    <a href="#education" class="dropdown-item text-white">Education</a>
+                                    <a href="#skills" class="dropdown-item text-white">Skills</a>
+                                    <a href="#interests" class="dropdown-item text-white">Interests</a>
+                                </div>
+                            </div>
+                            <a href="#contact" class="nav-item nav-link text-white">Contact Me</a>
                         </div>
                     </div>
                 </div>
             </nav>
+        </header>
+        <main class="ms-5">
+            <section class="container ms-5" id="intro">
+                <h6 class="display-5 text-center text-white">About Me</h6><br>
+                <div class="row">
+                    <div class="col-md-6"">
+                        <div class="container">
+                            <img src="assets/my_image.jpg" class="d-block w-100" alt="About us" height="570px" width="100px" style="border-radius: 30px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-white" style="font-size: larger;">
+                        <p>
+                            Hello, I am a Third year Engineering student at Netaji Subhas University of Technology pursuing B.Tech is Computer Science and Engineering (Big Data Analytics), I am passionate about harnessing the power of technology to solve complex problems and create innovative solutions. My academic journey has equipped me with a solid foundation in programming languages such as Python, Java, and C++, along with a deep understanding of data structures, algorithms, and software development principles. I am particularly interested in fields like artificial intelligence, machine learning, and web development, and I continually seek opportunities to expand my knowledge through coursework, personal projects, and collaborative endeavors.
+                        </p>
+                        <p>
+                            Beyond the classroom, I am actively involved in various extracurricular activities and student organizations that enrich my learning experience and professional development. I have participated in coding competitions, hackathons, and tech meetups, where I have honed my problem-solving skills and learned the importance of teamwork and effective communication. My goal is to leverage my technical skills and passion for innovation to contribute meaningfully to impactful projects and ultimately pursue a successful career in the tech industry.
+                        </p>
+                    </div>
+                </div><br>
+                <div id="education">
+                    <h6 class="display-4 text-white text-center">Education</h6><br>
+                    <div class="row">
+                        <div class="col-md-7 text-white">
+                            <div>
+                                <p class="fs-3">Netaji Subhas University of Technology, New Delhi (2022-Present)</p>
+                                <p class="fs-5">B.Tech. in Computer Science and Engineering (Big Data Analytics)</p>
+                                <p class="fs-5">CGPA - 8.78</p>
+                            </div><br>
+                            <div>
+                                <p class="fs-3">G.D. Goenka Public School, New Delhi (2021-2022)</p>
+                                <p class="fs-5">Subjects studied - Physics, Chemistry, Mathmematics, Computer Science, English</p>
+                                <p class="fs-5">CBSE class 12 Percentage - 93.4%</p>
+                            </div><br>
+                            <div>
+                                <p class="fs-3">G.D. Goenka Public School, New Delhi (2019-2020)</p>
+                                <p class="fs-5">Subjects studied - Science, Mathmematics, Social Science, English, Hindi</p>
+                                <p class="fs-5">CBSE Class 10 Percentage - 95.4%</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="container">
+                                <img src="assets/university_image.jpg" class="d-flex w-550" alt="University" height="400px" width="550px" style="border-radius: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div id="skills" class="m-4">
+                    <h6 class="display-5 text-center text-white">Skills</h6><br>
+                    <ul class="list-inline text-white display-6 text-center">
+                        <li class="list-inline-item">Java | </li>
+                        <li class="list-inline-item">C/C++ | </li>
+                        <li class="list-inline-item">Python | </li>
+                        <li class="list-inline-item">Html | </li>
+                        <li class="list-inline-item">CSS | </li>
+                        <li class="list-inline-item">JavaScript | </li>
+                        <li class="list-inline-item">jQuery | </li>
+                        <li class="list-inline-item">Bootstrap | </li>
+                        <li class="list-inline-item">NodeJs | </li>
+                        <li class="list-inline-item">ReactJs | </li>
+                        <li class="list-inline-item">ExpressJs | </li>
+                        <li class="list-inline-item">MongoDB | </li>
+                        <li class="list-inline-item">MySQL</li>
+                    </ul>
+                </div><br>
+                <div id="interests" class="row m-4">
+                    <h6 class="display-6 text-center text-white">Interests</h6><br>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-browser-chrome icon-lg"></span>
+                            <p class="text-white">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-google-play icon-lg"></span>
+                            <p class="text-white">App Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container text-center">
+                            <span class="bi bi-robot icon-lg"></span>
+                            <p class="text-white">Machine Learning</p>
+                        </div>
+                    </div>
+                </div><br>
+            </section>
+            <section id="projects" class="container m-4">
+                <h6 class="display-5 text-center text-white">Personal Projects</h6><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/portfolio.jpg">
+                                <div class="card-body text-center bg-dark">
+                                    <h4 class="card-title text-white">Portfolio Website</h4>
+                                    <p class="card-text text-white">The project aims to create a single-page portfolio website using HTML, CSS, and Bootstrap, leveraging modern web development practices to achieve a responsive and user-friendly design. The website features a responsive layout, ensuring optimal viewing across various devices, from desktops to smartphones. Additionally, the use of Bootstrap's components and grid system facilitates a consistent and user-friendly design.</p>
+                                    <a href="www.github.com/personalPortfolio"><i class="bi bi-github icon-sm m-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/calculator.jpg">
+                                <div class="card-body text-center bg-dark">
+                                    <h4 class="card-title text-white">Calculator</h4>
+                                    <p class="card-text text-white">This project aimed to create a web-based calculator using HTML, CSS, JavaScript, Bootstrap, and jQuery. HTML was used to structure the calculator's user interface, CSS for styling and layout, JavaScript for implementing the calculator's logic and functionality, Bootstrap for responsive design and pre-built components, and jQuery for simplifying DOM manipulation and event handling.
+                                    </p>
+                                    <i class="bi bi-github icon-sm m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 300px;">
+                                <img class="card-img-top" src="assets/TodoList.jpg">
+                                <div class="card-body text-center bg-dark">
+                                    <h4 class="card-title text-white">Todo List</h4>
+                                    <p class="card-text text-white">This project introduces a Todo List application designed to streamline task management through a user-friendly web interface. Leveraging HTML for structure, CSS for styling, JavaScript for functionality, and Bootstrap and jQuery for enhanced user experience, this application exemplifies modern web development practices. </p>
+                                    <i class="bi bi-github icon-sm m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main><br>
+        <section id="certificates">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div>
+                    <p class="display-6 text-white text-center">Certificates</p>
+                </div>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
@@ -59,17 +196,14 @@
                 </div>
                 
                 <div class="carousel-inner">
-                    <!-- 0th Image -->
                     <div class="carousel-item active">
-                        <img src="assets/pizza1.jpg" class="d-block w-100" alt="Carousel 1" style="max-height: 100vh;">
+                        <img src="assets/certificate1.png" class="d-block w-100" alt="Carousel 1" style="max-height: 100vh;">
                     </div>
-                    <!-- 1st Image -->
                     <div class="carousel-item">
-                        <img src="assets/pizza2.jpg" class="d-block w-100" alt="Carousel 2" style="max-height: 100vh;">
+                        <img src="assets/certificate2.png" class="d-block w-100" alt="Carousel 2" style="max-height: 100vh;">
                     </div>
-                    <!-- 2nd Image -->
                     <div class="carousel-item">
-                        <img src="assets/pizza3.jpg" class="d-block w-100" alt="Carousel 3" style="max-height: 100vh;">
+                        <img src="assets/certificate3.png" class="d-block w-100" alt="Carousel 3" style="max-height: 100vh;">
                     </div>  
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -79,152 +213,68 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-        </header>
-        <main class="m-4">
-            <section class="container m-4" id="about-us">
-                <h6 class="display-5 text-center">About Us</h6>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="container">
-                            <img src="assets/about_us.jpg" class="d-block w-100" alt="About us" height="400px">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="text-black-50">
-                            Welcome to Pizza, where every pizza tells a story! Since our doors opened in 19XX, we have been committed to serving pizzas that are not just meals but experiences. Our dedication to quality and taste starts with the finest ingredients, sourced both locally and globally, to ensure every bite is a celebration of flavor.
-                        </p>
-                        <p>
-                            At Pizza, we believe in the power of pizza to bring people together. Our cozy and inviting atmosphere is perfect for family gatherings, friendly meet-ups, and special occasions. We take pride in our artisanal approach, from our hand-stretched dough to our rich, flavorful sauces, all crafted in-house. Beyond our classic offerings, we love to innovate, creating unique topping combinations that surprise and delight our customers. Our commitment to community is reflected in our partnerships with local farmers and our participation in neighborhood events. Join us at Pizza, where every meal is made with love, passion, and a dash of creativity. We look forward to serving you and becoming a part of your cherished memories.
-                        </p>
+        </section><br>
+        <section id="contact" class="container m-4">
+            <h6 class="display-5 text-center text-white">Contact Me</h6><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container p-3">
+                        <p class="text-center fs-3 text-white">Here's my Contact Info</p>
+                        <div class="text-white text-center fs-4">My Email</div>
+                        <div class="text-white text-center fs-5">atishaysoni@example.com</div><br>
+                        <div class="text-white text-center fs-4">My Phone No.</div>
+                        <div class="text-white text-center fs-5">+91 85658 XXXXX</div><br>
+                        <div class="text-white text-center fs-4">My Address</div>
+                        <div class="text-white text-center fs-5">ABC street, Delhi <br>Delhi 1100XX</div>
                     </div>
                 </div>
-                <div class="row m-4">
-                    <h6 class="display-6 text-center">What Makes us Unique</h6>
-                    <div class="col-md-4">
-                        <div class="container text-center">
-                            <span class="bi bi-person color-teal icon-lg"></span>
-                            <p>Community-focused initiatives</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="container text-center">
-                            <span class="bi bi-trophy color-teal icon-lg"></span>
-                            <p>Award-winning pizzas</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="container text-center">
-                            <span class="bi bi-truck color-teal icon-lg"></span>
-                            <p>Fast and friendly service</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="team" class="container m-4">
-                <h6 class="display-5 text-center">Our Innovative Team</h6>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="card" style="width: 300px;">
-                                <img class="card-img-top" src="assets/head_chef.jpg">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Head Chef</h4>
-                                    <p class="card-text">Crafting every pizza to perfection with passion and expertise.</p>
-                                    <i class="bi bi-facebook icon-sm m-2"></i>
-                                    <i class="bi bi-instagram icon-sm m-2"></i>
-                                    <i class="bi bi-linkedin icon-sm m-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="card" style="width: 300px;">
-                                <img class="card-img-top" src="assets/restaurant_manager.jpg">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Restaurant Manager</h4>
-                                    <p class="card-text">Ensuring smooth operations and exceptional customer experiences.
-                                    </p>
-                                    <i class="bi bi-facebook icon-sm m-2"></i>
-                                    <i class="bi bi-instagram icon-sm m-2"></i>
-                                    <i class="bi bi-linkedin icon-sm m-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="card" style="width: 300px;">
-                                <img class="card-img-top" src="assets/sales_manager.jpg">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Sales Manager</h4>
-                                    <p class="card-text">Driving our growth with innovative marketing and community engagement.</p>
-                                    <i class="bi bi-facebook icon-sm m-2"></i>
-                                    <i class="bi bi-instagram icon-sm m-2"></i>
-                                    <i class="bi bi-linkedin icon-sm m-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="container m-4">
-                <h6 class="display-5 text-center ">Contact Us</h6>
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="col-md-6">
+                    <div class="container">
+                        <p class="text-center fs-3 text-white">You can also Write to Me</p>
                         <div class="container p-3">
-                            <p class="text-muted text-center fs-3">Here's our Contact Info</p>
-                            <div class="text-black-s text-center fs-4">Our Email</div>
-                            <div class="text-black-50 text-center fs-5">pizza@example.com</div>
-                            <div class="text-black-s text-center fs-4">Our Phone No.</div>
-                            <div class="text-black-50 text-center fs-5">+91 85658 XXXXX</div>
-                            <div class="text-black-s text-center fs-4">Our Address</div>
-                            <div class="text-black-50 text-center fs-5">HSR Layout, Bangalore <br> Karnatake 560 XXX</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="container">
-                            <p class="text-muted text-center fs-3">You can also Write to Us</p>
-                            <div class="container p-3">
-                                <div class="card-shadow">
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="name" class="form-label">Enter Your Name</label>
-                                                <input type="text" class="form-control" name="name" id="name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="emailid" class="form-label">Enter Your Email</label>
-                                                <input type="email" class="form-control" name="email" id="emailid">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="subject" class="form-label">Enter the subject</label>
-                                                <input type="text" class="form-control" name="subject" id="subject">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="message" class="form-label">Enter Your Message</label>
-                                                <textarea class="form-control" name="message" id="message"></textarea>
-                                            </div>
-                                            <div class="form-group text-center m-4">                                               
-                                                <input type="submit" class="btn btn-outline-dark" value="Send Message">
-                                            </div>
-                                        </form>
-                                    </div>
+                            <div class="card-shadow">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name" class="form-label text-white">Enter Your Name</label>
+                                            <input type="text" class="form-control" name="name" id="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailid" class="form-label text-white">Enter Your Email</label>
+                                            <input type="email" class="form-control" name="email" id="emailid">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject" class="form-label text-white">Enter the subject</label>
+                                            <input type="text" class="form-control" name="subject" id="subject">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message" class="form-label text-white">Enter Your Message</label>
+                                            <textarea class="form-control" name="message" id="message"></textarea>
+                                        </div>
+                                        <div class="form-group text-center m-4">                                               
+                                            <input type="submit" class="btn btn-outline-light" value="Send Message">
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
         <footer class="bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="container m-5">
-                            <img src="assets/logo.png" height="100px" class="bg-white">
+                            <img src="assets/logo.png" height="100px" class="bg-white" style="border-radius: 10px;">
                             <div class="text-white m-2">
-                                Follow us on:
-                                <i class="bi bi-facebook icon-sm m-2"></i>
-                                    <i class="bi bi-instagram icon-sm m-2"></i>
-                                    <i class="bi bi-linkedin icon-sm m-2"></i>
-                                <p class="text-white">"Bringing families together, one slice at a time."</p>
+                                Follow Me on:
+                                <a href="www.facebook.com/atishaysoni"><i class="bi bi-facebook icon-sm m-2"></i></a>
+                                    <a href="www.instagram.com/atishaysoni"><i class="bi bi-instagram icon-sm m-2"></i></a>
+                                    <a href="www.linkedin.com/atishaysoni"><i class="bi bi-linkedin icon-sm m-2"></i></a>
+                                    <a href="www.githum.com/atishaysoni"><i class="bi bi-github icon-sm m-2"></i></a>
+                                <p class="text-white">"Strive not to be a success, but rather to be of value"</p>
                             </div>
                         </div>
                     </div>
@@ -232,22 +282,20 @@
                         <div class="container m-5">
                             <p class="text-white fs-5">Quick Links</p>
                             <ul class="remove-bullets remove-text-decoration">
-                                <li><a  href="#about-us" class="remove-text-decoration text-white">About Us</a></li>
-                                <li><a href="#contact" class="remove-text-decoration text-white">Contact Us</a></li>C
+                                <li><a  href="#intro" class="remove-text-decoration text-white">About Me</a></li>
+                                <li><a href="#contact" class="remove-text-decoration text-white">Contact Me</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="text-white text-center">
-                        <p>All rights reserved &copy 2024, <a href="#">Pizza</a></p>
+                        <p>All rights reserved &copy 2024, <a href="#">AS</a></p>
                     </div>
                 </div>
             </div>
         </footer>
-        
-        <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
